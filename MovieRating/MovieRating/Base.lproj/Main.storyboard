@@ -23,12 +23,41 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Top" id="nfb-l8-crW">
+                        <barButtonItem key="leftBarButtonItem" id="a3e-wt-Th7"/>
                         <barButtonItem key="rightBarButtonItem" title="Favorites" id="Rq4-Lw-dVe"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="zFx-L0-OvH" kind="show" identifier="editFavorites" id="1bT-rk-h7j"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4c-pC-vzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="977" y="134"/>
+        </scene>
+        <!--Edit Favorites Table View Controller-->
+        <scene sceneID="gYM-JV-3N8">
+            <objects>
+                <tableViewController id="zFx-L0-OvH" customClass="EditFavoritesTableViewController" customModule="MovieRating" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x5i-oe-yaf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="zFx-L0-OvH" id="Pk3-ZZ-JmR"/>
+                            <outlet property="delegate" destination="zFx-L0-OvH" id="gNS-eZ-1cw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hg8-Wd-YG0">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="Qrn-6M-SGe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editBarButtonItem" destination="Qrn-6M-SGe" id="P6F-SV-H1L"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCV-Dv-hg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ce1-y9-b64">

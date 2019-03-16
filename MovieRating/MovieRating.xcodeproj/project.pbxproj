@@ -10,6 +10,7 @@
 		76F9C0ED6C3618E00577AEAB /* Pods_MovieRatingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151330AB64F26632C92F8444 /* Pods_MovieRatingTests.framework */; };
 		AA7F1365223D67F200D2BB3C /* TopMoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7F1364223D67F200D2BB3C /* TopMoviesTableViewController.swift */; };
 		AA7F1367223D784B00D2BB3C /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7F1366223D784B00D2BB3C /* MovieCell.xib */; };
+		AA7F1369223D8A8800D2BB3C /* EditFavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7F1368223D8A8800D2BB3C /* EditFavoritesTableViewController.swift */; };
 		AAB59C7B223B9DF00019978C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB59C7A223B9DF00019978C /* AppDelegate.swift */; };
 		AAB59C80223B9DF00019978C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB59C7E223B9DF00019978C /* Main.storyboard */; };
 		AAB59C83223B9DF00019978C /* MovieRating.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAB59C81223B9DF00019978C /* MovieRating.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 		94900AF87747905048E627EB /* Pods-MovieRatingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieRatingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieRatingUITests/Pods-MovieRatingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7F1364223D67F200D2BB3C /* TopMoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesTableViewController.swift; sourceTree = "<group>"; };
 		AA7F1366223D784B00D2BB3C /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		AA7F1368223D8A8800D2BB3C /* EditFavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFavoritesTableViewController.swift; sourceTree = "<group>"; };
 		AAB59C77223B9DF00019978C /* MovieRating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieRating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB59C7A223B9DF00019978C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAB59C7F223B9DF00019978C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				AAB59C7A223B9DF00019978C /* AppDelegate.swift */,
 				AAB59C7E223B9DF00019978C /* Main.storyboard */,
+				AA7F1368223D8A8800D2BB3C /* EditFavoritesTableViewController.swift */,
 				AA7F1364223D67F200D2BB3C /* TopMoviesTableViewController.swift */,
 				AAB59C84223B9DF20019978C /* Assets.xcassets */,
 				AAB59C86223B9DF20019978C /* LaunchScreen.storyboard */,
@@ -403,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB59C83223B9DF00019978C /* MovieRating.xcdatamodeld in Sources */,
+				AA7F1369223D8A8800D2BB3C /* EditFavoritesTableViewController.swift in Sources */,
 				AA7F1365223D67F200D2BB3C /* TopMoviesTableViewController.swift in Sources */,
 				AAB59C7B223B9DF00019978C /* AppDelegate.swift in Sources */,
 			);
