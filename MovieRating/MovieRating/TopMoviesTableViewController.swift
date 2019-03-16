@@ -54,7 +54,7 @@ class TopMoviesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        performSegue(withIdentifier: "editFavorites", sender: nil)
+     performSegue(withIdentifier: "editFavorites", sender: nil)
       return nil
     }
     

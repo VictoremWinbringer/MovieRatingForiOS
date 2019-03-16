@@ -12,7 +12,7 @@
         <!--Top-->
         <scene sceneID="l7Z-P0-M8a">
             <objects>
-                <tableViewController title="Top" id="r1D-5h-tL7" customClass="TopMoviesTableViewController" customModule="MovieRating" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TopMovies" title="Top" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r1D-5h-tL7" customClass="TopMoviesTableViewController" customModule="MovieRating" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iF7-iZ-Qdg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Top" id="nfb-l8-crW">
                         <barButtonItem key="leftBarButtonItem" id="a3e-wt-Th7"/>
-                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="Rq4-Lw-dVe"/>
+                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="Rq4-Lw-dVe">
+                            <connections>
+                                <segue destination="n97-0U-9Yc" kind="show" id="4bD-yQ-RH1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="zFx-L0-OvH" kind="show" identifier="editFavorites" id="1bT-rk-h7j"/>
@@ -57,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCV-Dv-hg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="134"/>
+            <point key="canvasLocation" x="1796" y="-122"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ce1-y9-b64">
@@ -76,6 +80,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLi-qt-HEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="205.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="tNG-jo-FBJ">
+            <objects>
+                <tableViewController id="n97-0U-9Yc" customClass="FavoritesTableViewController" customModule="MovieRating" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZFT-6z-hBB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="n97-0U-9Yc" id="oyI-qX-ueg"/>
+                            <outlet property="delegate" destination="n97-0U-9Yc" id="azs-m0-wme"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorites" id="t36-RS-w6D"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqe-no-SXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="556"/>
         </scene>
     </scenes>
 </document>
